@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<body style="background-color:grey;">
+<form action="/course_select.php">
+<select name="Home" id="home">
+<option value="H" selected>HOME</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Course" id="course" required>
+<option value="C" disabled selected hidden>COURSES</option>
+<option value="B">B.tech</option>
+<option value="M">M.tech</option>
+<option value="DB">Dual M.tech</option>
+<option value="DM">Dual MBA</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Departments" id="dept" style="width:190px" required>
+<option value="D" disabled selected hidden>DEPARTMENTS</option>
+<option value="SCE">School of Computer Engg.</option>
+<option value="SEE">School of Electronics Engg.</option>
+<option value="SCIE">School of Civil Engg.</option>
+<option value="SOM">School of Management</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Syllabus" id="syll" required>
+<option value="S" disabled selected hidden>SYLLABUS</option>
+<option value="B">B.tech</option>
+<option value="M">M.tech</option>
+<option value="DB">Dual M.tech</option>
+<option value="DM">Dual MBA</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Timetable" id="Timetable" onchange="window.open(this.options[this.selectedIndex].value);" required>
+<option value="T" disabled selected hidden>TIMETABLE</option>
+<option value="B.tech_TT.html">B.tech</option>
+<option value="M.tech_TT.html">M.tech</option>
+<option value="Dual_M.tech_tt.html">Dual M.tech</option>
+<option value="Dual_MBA_tt.html">Dual MBA</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Faculty" id="Fac" style="width:190px" required>
+<option value="F" disabled selected hidden;>FACULTY</option>
+<option value="SCE">School of Computer Engg.</option>
+<option value="SEE">School of Electronics Engg.</option>
+<option value="SCIE">School of Civil Engg.</option>
+<option value="SOM">School of Management</option>
+</select>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="Contact_us" id="cu" required>
+<option value="C" disabled selected hidden>CONTACT US</option>
+<option value="E">Email</option>
+<option value="PNO">Phone Number</option>
+<option value="Fax">FAX</option>
+</select>
+</form>
+</body>
+</html>
